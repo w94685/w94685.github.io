@@ -64,6 +64,11 @@ body{
 	opacity: 1;
 	z-index: 10;
 }
+#p3{
+	width: 100%;
+	left: 0;
+	right: 0;
+}
 .content{
 	font-size: 20px;
 	color: #555;
@@ -78,7 +83,7 @@ h1{
 /*Page4 social media icon*/
 .icon_box{
 	width: 100%;
-	height: 100%;
+	height: 70px;
 	margin-top:5vh;
 }
 .fa{
@@ -86,53 +91,61 @@ h1{
 	height: 25px;
 	padding: 12px;
 	border-radius: 50px;
-	color: #333;
-	opacity: 0.5;
 	text-align: center;
 	text-decoration: none;
 	margin-right: 10px;
 	cursor: pointer;
-	transition: 0.7s;
+	transition: 0.5s;
 }
 .fa-facebook{
 	border: 2px solid #3b5998;
 	color: #3b5998;
 }
 .fa-facebook:hover{
-	opacity: 1;
-	transition: 0.7s;
+	transition: 0.5s;
+	color: #FFF;
+	background-color: #3b5998;
+	box-shadow: 0 0 10px #3b5998;
 }
 .fa-instagram{
 	border: 2px solid #F75245;
 	color: #F75245;
 }
 .fa-instagram:hover{
-	opacity: 1;
-	transition: 0.7s;
+	transition: 0.5s;
+	color: #FFF;
+	background-color: #F75245;
+	box-shadow: 0 0 10px #F75245;
 }
 .fa-envelope-o{
 	border: 2px solid #E4001F;
 	color: #E4001F;
 }
 .fa-envelope-o:hover{
-	opacity: 1;
-	transition: 0.7s;
+	transition: 0.5s;
+	color: #FFF;
+	background-color: #E4001F;
+	box-shadow: 0 0 10px #E4001F;
 }
 .fa-telegram{
 	border: 2px solid #34ABE3;
 	color: #34ABE3;
 }
 .fa-telegram:hover{
-	opacity: 1;
-	transition: 0.7s;
+	transition: 0.5s;
+	color: #FFF;
+	background-color: #34ABE3;
+	box-shadow: 0 0 10px #34ABE3;
 }
 .fa-github{
 	border: 2px solid #000;
 	color: #000;
 }
 .fa-github:hover{
-	opacity: 1;
-	transition: 0.7s;
+	transition: 0.5s;
+	color: #FFF;
+	background-color: #000;
+	box-shadow: 0 0 10px #000;
 }
 
 /*nav---------------------------------------------*/
@@ -149,7 +162,8 @@ h1{
 	margin-right: 3%;
 	height:100%;
 	list-style: none;
-	border: 1px solid #000;
+	border: 1px solid #198d91;
+	color: #198d91;
 	box-sizing: border-box;
 	cursor: pointer;
 	z-index: 1;
@@ -157,9 +171,14 @@ h1{
 	font-family: eng_font;
 	font-size: 25px;
 	line-height: 50px;
+	transition: 0.8s;
 }
 #nav_li_0{
 	margin-left: 5.3%;
+}
+.nav li:hover{
+	color: #FFF;
+	transition: 0.8s;
 }
 
 /*nav animate---------------------------------------*/
@@ -168,7 +187,7 @@ h1{
 	position: absolute;
 	width: 100%;
 	height: 0;
-	background: #75e8c4;
+	background: #198d91;
 	left: 0;
 	transition: all 500ms;
 	z-index: -1;
