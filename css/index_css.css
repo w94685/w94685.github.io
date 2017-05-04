@@ -3,10 +3,6 @@
 	font-family: eng_font;
 	src: url(../font/GeosansLight.ttf);
 }
-@font-face{
-	font-family: ch_font;
-	src: url(../font/NotoSansCJKtc-Light.otf);
-}
 
 /*container--------------------------------------------*/
 body{
@@ -72,7 +68,7 @@ body{
 	font-size: 17px;
 	line-height: 25px;
 	color: #555;
-	font-family: ch_font;
+	font-family: "微軟正黑體";
 }
 h1{
 	font-size: 32px;
@@ -86,7 +82,7 @@ h2{
 	line-height: 30px;
 	text-align: center;
 	color: #CCC;
-	font-family: ch_font;
+	font-family: "微軟正黑體";
 }
 
 /*Page1 [HOME]---------------------------------*/
@@ -231,7 +227,7 @@ h2{
 
 	line-height: 38vh;
 	font-size: 40px;
-	font-family: ch_font;
+	font-family: eng_font, "微軟正黑體";
 	text-shadow: 0 0 5px #000;
 	color: #FFF;
 }
