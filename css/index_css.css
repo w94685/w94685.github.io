@@ -3,6 +3,10 @@
 	font-family: eng_font;
 	src: url(../font/GeosansLight.ttf);
 }
+@font-face{
+	font-family: ch_font;
+	src: url(../font/NotoSansCJKtc-Light.otf);
+}
 
 /*container--------------------------------------------*/
 body{
@@ -17,6 +21,18 @@ body{
 	align-items: center;
 	background:url(../img/background.png);
 }
+#footer{
+	position: fixed;
+	width: 100%;
+	height: 5vh;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+
+	font-size: 15px;
+	font-family: eng_font;
+	color: #FFF;
+}
 
 /*main box------------------------------------------*/
 .main{
@@ -29,7 +45,7 @@ body{
 	height:70vh;
 	background-color:rgba(255,255,255,0.9);
 	border-radius: 3px;
-	opacity:0;
+	opacity:1;
 	text-align:center;
 	box-shadow: 0 0 30px rgba(0,0,0,0.4);
 	line-height: 5vh;
@@ -46,7 +62,7 @@ body{
 	overflow: scroll;
 	overflow-x: hidden;
 	opacity: 0;
-	text-align: left;
+	text-align: justify;
 
 	font-size:25px;
 	line-height: normal;
@@ -56,7 +72,7 @@ body{
 	font-size: 17px;
 	line-height: 25px;
 	color: #555;
-	font-family: "微軟正黑體";
+	font-family: ch_font;
 }
 h1{
 	font-size: 32px;
@@ -70,7 +86,7 @@ h2{
 	line-height: 30px;
 	text-align: center;
 	color: #CCC;
-	font-family: "微軟正黑體";
+	font-family: ch_font;
 }
 
 /*Page1 [HOME]---------------------------------*/
@@ -189,6 +205,37 @@ h2{
 	opacity: 1;
 	visibility: visible;
 }
+
+/*Page3 Works------------------------------------*/
+#text2{
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
+.slide{
+	position: relative;
+	width: 400%;
+	height: 38vh;
+	margin-top: 20px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+.works{
+	position: relative;
+	float: left;
+	list-style: none;
+	text-align: center;
+	width: 25%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+
+	line-height: 38vh;
+	font-size: 40px;
+	font-family: ch_font;
+	text-shadow: 0 0 5px #000;
+	color: #FFF;
+}
+
 
 /*nav---------------------------------------------*/
 .nav{
