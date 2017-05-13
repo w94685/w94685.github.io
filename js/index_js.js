@@ -32,6 +32,7 @@ $(document).ready(function(e) {
 	var slide_cur = 0;
 	var slide_next;
 
+	//btn click
 	$("#right").click(function(){
 		slide_next = slide_cur + 1;
 		slide();
@@ -49,10 +50,11 @@ $(document).ready(function(e) {
 		});
 	});
 
+	//slide
 	slideON();
 	function slideON(){
 		slide_next = slide_cur + 1;
-		slide_interval = setInterval(slide,5000);
+		slide_interval = setInterval(slide,10000);
 	};
 	function slideOFF(){
 		clearInterval(slide_interval);
@@ -61,6 +63,8 @@ $(document).ready(function(e) {
 		slideOFF();
 		if(slide_next > 2) slide_next = 0;
 		if(slide_next < 0) slide_next = 2;
+		$(".smallbtn").eq(slide_cur).css({'background-color':'#CCC'});
+		$(".smallbtn").eq(slide_next).css({'background-color':'#198d91'});
 
 		if(slide_next != slide_cur){
 			slide_cur = slide_next;
@@ -70,4 +74,8 @@ $(document).ready(function(e) {
 			});
 		};
 	};
+
+	$(".works_btn").click(function(){
+		$(".coverBg").css({'visibility':'visible','opacity':1});
+	});
 });
